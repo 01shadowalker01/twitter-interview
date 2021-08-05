@@ -1,1 +1,19 @@
-<p>sidebar works!</p>
+<div class="wrapper">
+  <img src="assets/icons/twitter.svg" alt="twitter icon" class="logo">
+  <mat-selection-list [multiple]="false">
+    <mat-list-option><mat-icon>home</mat-icon> Home </mat-list-option>
+    <mat-list-option><mat-icon>explore</mat-icon> Explore</mat-list-option>
+    <mat-list-option>
+      <mat-icon>notifications</mat-icon> Notifications
+    </mat-list-option>
+    <mat-list-option><mat-icon>email</mat-icon> Messages</mat-list-option>
+    <mat-list-option><mat-icon>bookmark</mat-icon> Bookmarks</mat-list-option>
+    <mat-list-option><mat-icon>description</mat-icon> Lists</mat-list-option>
+    <mat-list-option color="primary">
+      <mat-icon>person</mat-icon> Profile
+    </mat-list-option>
+    <mat-list-option><mat-icon>more_horiz</mat-icon> More</mat-list-option>
+  </mat-selection-list>
+
+  <button mat-flat-button color="primary">Tweet</button>
+</div>

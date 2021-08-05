@@ -1,0 +1,13 @@
+.wrapper {
+    padding: 16px;
+    padding-right: 32px;
+
+    .logo {
+        width: 2vw;
+    }
+
+    .mat-list-base .mat-list-option .mat-list-text {
+        align-items: stretch;
+        flex-direction: row;
+    }
+}
