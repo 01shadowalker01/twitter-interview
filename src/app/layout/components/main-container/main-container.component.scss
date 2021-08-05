@@ -4,4 +4,14 @@
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: rgb(244, 248, 251);
+
+  .background-image {
+    background-image: url("../../../../assets/snowy-mountain.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    border-bottom-right-radius: 36px;
+  }
 }
