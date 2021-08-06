@@ -1,0 +1,23 @@
+.profile-layout {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 4fr 2fr 0.5fr;
+  position: relative;
+  top: -50px;
+
+  .box {
+      border-radius: 8px;
+      background-color: white;
+  }
+
+  .left-column {
+    grid-column: 2 / 3;
+  }
+
+  .center-column {
+    grid-column: 3 / 4;
+  }
+
+  .right-column {
+    grid-column: 4 / 5;
+  }
+}

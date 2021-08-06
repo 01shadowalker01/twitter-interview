@@ -9,6 +9,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { MainContainerComponent } from "./components/main-container/main-container.component";
+import { ProfileModule } from "../profile/profile.module";
 
 @NgModule({
   declarations: [SidebarComponent, HeaderComponent, MainContainerComponent],
@@ -18,7 +19,9 @@ import { MainContainerComponent } from "./components/main-container/main-contain
     MatListModule,
     MatIconModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+
+    ProfileModule
   ],
   exports: [MainContainerComponent],
 })

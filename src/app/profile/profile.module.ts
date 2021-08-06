@@ -7,6 +7,7 @@ import { ActionButtonsComponent } from './components/action-buttons/action-butto
 import { TrendListComponent } from './components/trend-list/trend-list.component';
 import { RecommendedPeopleComponent } from './components/recommended-people/recommended-people.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -21,7 +22,10 @@ import { ProfileComponent } from './components/profile/profile.component';
     ProfileComponent
   ],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+
+    MatIconModule
+  ],
+  exports: [ProfileComponent]
 })
 export class ProfileModule { }
