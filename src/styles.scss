@@ -1,5 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('../node_modules/@angular/material/prebuilt-themes/indigo-pink.css');
+@import url("../node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --primary: #1ca1f1;
+  --light-primary: #1c9ff11c;
+  --light-gray: rgb(212, 218, 223);
+}
