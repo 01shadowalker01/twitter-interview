@@ -39,7 +39,11 @@ export const TWEETS: Tweet[] = [
     commentsCount: 3,
     retweetsCount: 16,
     timePassed: "2 Hour",
-    imageUrlList: [],
+    imageUrlList: [
+      "assets/snowy-mountain.jpg",
+      "assets/snowy-mountain2.jpg",
+      "assets/snowy-mountain3.jpg",
+    ],
     isVerified: true,
     repliedTweet: null,
   },

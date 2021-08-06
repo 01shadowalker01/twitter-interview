@@ -26,6 +26,13 @@
       <ng-container *ngIf="tweet.repliedTweet">
         <inv-tweet [tweet]="tweet.repliedTweet" [isNested]="true"></inv-tweet>
       </ng-container>
+
+      <div
+        class="image-gallery"
+        *ngIf="tweet.imageUrlList && tweet.imageUrlList.length > 0"
+      >
+        <img *ngFor="let url of tweet.imageUrlList" [src]="url" />
+      </div>
     </div>
 
     <div class="action-buttons" *ngIf="!isNested">
