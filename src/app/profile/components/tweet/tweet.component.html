@@ -1,1 +1,52 @@
-<p>tweet works!</p>
+<div class="inv-tweet">
+  <img
+    class="user-image"
+    [src]="tweet.userImageUrl"
+    [alt]="tweet.userFullname"
+  />
+
+  <div class="tweet">
+    <div class="title">
+      <div class="user-info">
+        <strong>{{ tweet.userFullname }}</strong>
+        <mat-icon *ngIf="tweet.isVerified" class="verified-badge">
+          verified
+        </mat-icon>
+        <span class="username">@{{ tweet.username }}</span>
+      </div>
+
+      <div class="time-passed">
+        <mat-icon>schedule</mat-icon>
+        {{ tweet.timePassed }}
+      </div>
+    </div>
+
+    <div class="tweet-body">
+      {{ tweet.body }}
+      <ng-container *ngIf="tweet.repliedTweet">
+        <inv-tweet [tweet]="tweet.repliedTweet" [isNested]="true"></inv-tweet>
+      </ng-container>
+    </div>
+
+    <div class="action-buttons" *ngIf="!isNested">
+      <button mat-button>
+        <mat-icon>mode_comment</mat-icon>
+        {{ tweet.commentsCount }}
+      </button>
+      <div class="vertical-separator"></div>
+      <button mat-button>
+        <mat-icon>autorenew</mat-icon>
+        {{ tweet.retweetsCount }}
+      </button>
+      <div class="vertical-separator"></div>
+      <button mat-button>
+        <mat-icon>favorite</mat-icon>
+        {{ tweet.likesCount }}
+      </button>
+      <div class="vertical-separator"></div>
+      <button mat-button>
+        <mat-icon>reply</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+.inv-tweet {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-gap: 0.5vw;
+  margin: 2vh 0;
+
+  .user-image {
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+  }
+
+  .tweet {
+    border-radius: 8px;
+    border-top-left-radius: 4px;
+    padding: 8px;
+    border: 2px solid rgb(227, 232, 236);
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5vh;
+
+      .verified-badge {
+        font-size: 1.1rem;
+        color: var(--primary);
+        margin-left: 4px;
+      }
+
+      .username {
+        color: gray;
+        margin-left: .5vw;
+      }
+
+      .time-passed {
+        display: flex;
+        
+        mat-icon {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &-body {
+    }
+
+    .action-buttons {
+      display: flex;
+      justify-content: space-evenly;
+      mat-icon {
+        color: #d4d7e0;
+      }
+
+      .vertical-separator {
+        border-right: 0.1px solid rgb(220, 225, 230);
+      }
+    }
+  }
+}

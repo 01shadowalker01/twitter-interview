@@ -9,17 +9,26 @@ import { ProfileComponent } from "./components/profile/profile.component";
 import { MatIconModule } from "@angular/material/icon";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { MatButtonModule } from "@angular/material/button";
+import { MatTabsModule } from "@angular/material/tabs";
+import { TweetComponent } from "./components/tweet/tweet.component";
 
 @NgModule({
   declarations: [
     UserOverviewComponent,
     MyTweetsComponent,
+    TweetComponent,
     ActionButtonsComponent,
     TrendListComponent,
     RecommendedPeopleComponent,
     ProfileComponent,
   ],
-  imports: [CommonModule, MatIconModule, MatExpansionModule, MatButtonModule],
+  imports: [
+    CommonModule,
+    MatIconModule,
+    MatExpansionModule,
+    MatButtonModule,
+    MatTabsModule,
+  ],
   exports: [ProfileComponent],
 })
 export class ProfileModule {}

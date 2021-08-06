@@ -1,1 +1,16 @@
-<p>my-tweets works!</p>
+<div class="inv-my-tweets">
+  <mat-tab-group>
+    <mat-tab label="Tweets">
+      <inv-tweet *ngFor="let tweet of tweets" [tweet]="tweet"></inv-tweet>
+    </mat-tab>
+    <mat-tab label="Tweets & Retweets">
+      <inv-tweet *ngFor="let tweet of tweets" [tweet]="tweet"></inv-tweet>
+    </mat-tab>
+    <mat-tab label="Media">
+      <inv-tweet *ngFor="let tweet of tweets" [tweet]="tweet"></inv-tweet
+    ></mat-tab>
+    <mat-tab label="Likes">
+      <inv-tweet *ngFor="let tweet of tweets" [tweet]="tweet"></inv-tweet
+    ></mat-tab>
+  </mat-tab-group>
+</div>
