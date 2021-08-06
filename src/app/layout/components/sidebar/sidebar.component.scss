@@ -1,13 +1,27 @@
 .wrapper {
-    padding: 16px;
-    padding-right: 32px;
+  padding: 16px;
+  width: 12vw;
 
-    .logo {
-        width: 2vw;
-    }
+  .logo {
+    width: 2vw;
+    margin-bottom: 5vh;
+  }
 
-    .mat-list-base .mat-list-option .mat-list-text {
-        align-items: stretch;
-        flex-direction: row;
+  .mat-list-base .mat-list-option .mat-list-text {
+    align-items: stretch;
+    flex-direction: row;
+  }
+
+  .btn-wrapper {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .tweet-btn {
+      background-color: var(--primary);
+      width: 75%;
+      border-radius: 36px;
     }
+  }
 }
