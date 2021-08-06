@@ -1,12 +1,13 @@
 .profile-layout {
   display: grid;
   grid-template-columns: 0.5fr 2fr 4fr 2fr 0.5fr;
+  grid-gap: 16px;
   position: relative;
   top: -50px;
 
   .box {
-      border-radius: 8px;
-      background-color: white;
+    border-radius: 16px;
+    background-color: white;
   }
 
   .left-column {
@@ -19,5 +20,9 @@
 
   .right-column {
     grid-column: 4 / 5;
+  }
+
+  .mb-16 {
+    margin-bottom: 16px;
   }
 }
