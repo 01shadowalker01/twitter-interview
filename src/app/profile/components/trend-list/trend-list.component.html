@@ -1,1 +1,23 @@
-<p>trend-list works!</p>
+<div class="header">
+  <h4>Trends for you</h4>
+  <mat-icon>settings</mat-icon>
+</div>
+<hr />
+
+<ng-container *ngFor="let trend of trends">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <p>
+          <strong>#{{ trend.trendName }}</strong>
+        </p>
+        <p class="count">{{ trend.tweetCount }} Tweets</p>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    see more ...
+  </mat-expansion-panel>
+</ng-container>
+
+<div class="see-more-btn">
+  <button mat-button>SEE MORE</button>
+</div>

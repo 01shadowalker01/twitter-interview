@@ -1,0 +1,42 @@
+.header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+
+  h4 {
+    margin: 0;
+  }
+
+  mat-icon {
+    color: var(--light-gray);
+  }
+}
+
+hr {
+  background: var(--light-gray);
+  border-width: 0.01px;
+}
+
+.mat-expansion-panel:not([class*="mat-elevation-z"]) {
+  box-shadow: none;
+  padding: 8px 0;
+}
+
+.mat-expansion-panel-header-title,
+.mat-expansion-panel-header-description {
+  display: block;
+
+  p {
+    margin-bottom: 4px;
+
+    &.count {
+      color: gray;
+    }
+  }
+}
+
+.see-more-btn {
+  display: flex;
+  justify-content: center;
+  color: lightgrey;
+}

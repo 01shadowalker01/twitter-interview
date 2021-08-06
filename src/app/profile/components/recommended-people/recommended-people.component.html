@@ -1,1 +1,23 @@
-<p>recommended-people works!</p>
+<div class="header">
+  <h4>You should follow</h4>
+  <mat-icon>refresh</mat-icon>
+</div>
+<hr />
+
+<ng-container *ngFor="let person of recommendedList">
+  <div class="person">
+    <img [src]="person.imageUrl" [alt]="person.fullname" />
+    <div class="user-info">
+      <div class="first-line">
+        <strong>{{ person.fullname }}</strong>
+        <mat-icon *ngIf="person.isVerified">verified</mat-icon>
+      </div>
+      <p>@{{ person.username }}</p>
+    </div>
+    <button mat-button class="follow-btn">Follow</button>
+  </div>
+</ng-container>
+
+<div class="see-all-btn">
+  <button mat-button>SEE ALL</button>
+</div>

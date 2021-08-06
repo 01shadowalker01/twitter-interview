@@ -1,0 +1,55 @@
+.header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+
+  h4 {
+    margin: 0;
+  }
+
+  mat-icon {
+    color: var(--light-gray);
+  }
+}
+
+hr {
+  background: var(--light-gray);
+  border-width: 0.01px;
+}
+
+.person {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  grid-gap: 0.5vw;
+  padding: 1vh 1vw;
+
+  img {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+  }
+
+  .first-line {
+    display: flex;
+    align-items: center;
+
+    mat-icon {
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin-left: 4px;
+    }
+  }
+
+  .follow-btn {
+    border-radius: 20px;
+    height: 6vh;
+    color: var(--primary);
+    background-color: var(--light-primary);
+  }
+}
+
+.see-all-btn {
+  display: flex;
+  justify-content: center;
+  color: lightgrey;
+}
